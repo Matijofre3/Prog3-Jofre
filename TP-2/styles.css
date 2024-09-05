@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 20px;
+    color: #32CD32;
+}
+
+header {
+    background-color: #4a4a4a;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+}
+
+section {
+    margin: 20px;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+    text-decoration: underline;
+}
+
+blockquote {
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+    color: #87CEEB;
+    margin: 10px 0;
+    border-left: 5px solid #87CEEB;
+    padding-left: 10px;
+}
+
+.box {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+.highlighted-box {
+    border: 3px solid #FF8C00;
+    background-color: #FFEBB7;
+}
+
+.relative-container {
+    position: relative;
+    background-color: #87CEEB;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+blockquote {
+    font-style: italic;
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item {
+    background-color: #6fa3ef;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.animacion-container {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.animacion {
+    width: 150px;
+    height: 150px;
+    background-color: #6fa3ef;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.animacion:hover {
+    background-color: #4caf50;
+}
+
+.mover {
+    width: 150px;
+    height: 150px;
+    background-color: #f44336;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    animation: mover 3s linear infinite;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+@media (max-width: 768px) {
+    body {
+        background-color: #333;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .box {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    blockquote {
+        font-size: 14px;
+    }
+}
