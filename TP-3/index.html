@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <p>Primer párrafo</p>
+    <p>Segundo párrafo</p>
+    <p>Tercer párrafo</p>
+    <button onclick="cambiarColor()">Cambiar color</button>
+    <div id="app"></div>
+    <form>
+      <input type="text" id="inputTexto" />
+      <button type="button" onclick="mostrarTexto()">Mostrar texto</button>
+    </form>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+    </ul>
+    <input type="text" id="campoTexto" />
+    <button onclick="deshabilitar()">Deshabilitar</button>
+    <button onclick="habilitar()">Habilitar</button>
+    <form onsubmit="guardarCorreo(event)">
+      <input type="email" id="email" placeholder="Ingresa tu correo" required />
+      <button type="submit">Guardar correo</button>
+    </form>
+    
+    <div id="resultado"></div>
+    <button onclick="eliminarCorreo()">Eliminar correo</button>
+</body>
+<script src="main.js"></script>
+</html>
